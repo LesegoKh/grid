@@ -1,0 +1,2 @@
+RESPONSIVE CSS GRID LAYOUT BASED ON SCREEN SIZE 
+AWS EC2 INSTANCE HOSTING LINK: https://lesegosite.s3.amazonaws.com/CSS+Grid+Design/Home.html
