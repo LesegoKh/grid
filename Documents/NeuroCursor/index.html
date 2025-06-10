@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroCursor - Eye-Tracking PWA</title>
+   
+    <!-- PWA & Meta Tags -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Only Use One clmtrackr Version -->
+    <script src="https://cdn.jsdelivr.net/npm/clmtrackr@1.1.2/clmtrackr.min.js"></script>
+
+    <meta name="theme-color" content="#0ff">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- GSAP & WebGazer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://webgazer.cs.brown.edu/webgazer.js"></script>
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div id="custom-cursor"></div>
+
+    <!-- Calibration Screen -->
+    <div id="calibration-overlay">
+        <h1>NeuroCursor Calibration</h1>
+        <p>Follow the dots to calibrate eye-tracking.</p>
+        <p id="calibration-status">Please click start calibration to begin.</p>
+        <button id="start-calibration">Start Calibration</button>
+    </div>
+
+    <!-- HUD (Status Panel) -->
+    <div id="hud">
+        <p>Eye Tracking: <span id="tracking-status">Inactive</span></p>
+        <p>Cursor X: <span id="cursor-x">0</span></p>
+        <p>Cursor Y: <span id="cursor-y">0</span></p>
+        <p>Blink Detection: <span id="blink-status">None</span></p>
+    </div>
+
+    <!-- Main JS -->
+    <script src="app.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+/* Cyberpunk Dark Theme */
+body {
+    background: #080808;
+    color: #0ff;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Custom Cursor */
+#custom-cursor {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: rgba(0, 255, 255, 0.8);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.1s ease-out;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+/* Calibration Overlay */
+#calibration-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    text-align: center;
+    border: 2px solid cyan;
+    box-shadow: 0 0 10px cyan;
+}
+
+#calibration-overlay h1 {
+    font-size: 20px;
+}
+
+#start-calibration {
+    background: cyan;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* HUD Panel */
+#hud {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border: 1px solid cyan;
+    font-size: 14px;
+    box-shadow: 0 0 5px cyan;
+}
